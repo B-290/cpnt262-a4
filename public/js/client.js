@@ -1,5 +1,3 @@
-const newImage = require('newImage')
-
 fetch ('http://localhost:3000/api/vo/gallery')
       
       .then (function(response){
