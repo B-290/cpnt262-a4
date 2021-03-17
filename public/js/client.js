@@ -1,4 +1,4 @@
-fetch ('http://localhost:3000/api/vo/gallery')
+fetch ('http://localhost:3000/api/data/gallery')
       
       .then (function(response){
         throw new console.error('not-found');
