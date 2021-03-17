@@ -1,3 +1,5 @@
+const newImage = require('newImage')
+
 fetch ('http://localhost:3000/api/vo/gallery')
       
       .then (function(response){
@@ -16,14 +18,19 @@ fetch ('http://localhost:3000/api/vo/gallery')
 
 
   
-let someHTML = `<img>\n`;
+let output = '';
 
-newArray.forEach(function(image){
-  someHTML = someHTML +``;  
+newImage.forEach(function(newImage){
+  output = output +``;  
    someHTML += `
    <img src='${image.fileName}' alt='my image'>
    <a href="${image.attribution.url}">Some Text</a>`;
  });
  
-  document.querySelector('.gallery').innerHTML = someHTML;
-
+  document.querySelector('.table').innerHTML = output;
+  //newArray.forEach(function(image){
+    //   // someHTML = someHTML +``;  
+    //   someHTML += `
+    //   <img src='${image.fileName}' alt='my image'>
+    //   <a href="${image.attribution.url}">Some Text</a>`;
+    // });

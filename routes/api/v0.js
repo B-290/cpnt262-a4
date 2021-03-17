@@ -4,7 +4,7 @@ const router = express.Router();
 const gallery = ('../../data/gallery.js')
 
 router.get('/gallery', function(request, response){
- response.json(newImage);
+ response.json(gallery);
 });
 
 module.exports = router
