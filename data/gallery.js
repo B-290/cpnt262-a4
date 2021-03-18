@@ -1,12 +1,12 @@
 'use strict'
 
 
-const newArray = [
+const newImage = [
   {    
     id:           237,
     title:        'Puppy',
     source:       'Lorem Picsum',
-    fileName:     './images/img2.jpg',
+    fileName:     './public/images/img2.jpg',
     attribution:  {
       source: 'Lorem Picsum',
       credit: 'André Spieker',
@@ -18,7 +18,7 @@ const newArray = [
   id:           11,
   title:        'Puppy',
   source:       'Lorem Picsum',
-  fileName:     './images/img4.jpg',
+  fileName:     './public/images/img4.jpg',
   attribution:  {
     source: 'Lorem Picsum',
     credit: 'André Spieker',

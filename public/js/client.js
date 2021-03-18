@@ -14,11 +14,11 @@ fetch ('http://localhost:3000/api/data/gallery')
         console.log(err);
       });
 
-
+const newArray = require('../v0/gallery.js');
   
 let output = '';
 
-newImage.forEach(function(newImage){
+newArray.forEach(function(newImage){
   output = output +``;  
    someHTML += `
    <img src='${image.fileName}' alt='my image'>
