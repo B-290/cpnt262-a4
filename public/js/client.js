@@ -1,4 +1,4 @@
-fetch ('http://localhost:3000/api/data/gallery')
+fetch ('https://git.heroku.com/b-350.git')
       
       .then (function(response){
         throw new console.error('not-found');
@@ -14,23 +14,23 @@ fetch ('http://localhost:3000/api/data/gallery')
         console.log(err);
       });
 
-      app.set('view engine','ejs')
 
-const newArray = require('../v0/gallery.js');
   
-let output = '';
+// let output = '';
 
-newArray.forEach(function(newImage){
-  output = output +``;  
-   someHTML += `
-   <img src='${image.fileName}' alt='my image'>
-   <a href="${image.attribution.url}">Some Text</a>`;
- });
+// newImage.forEach(function(newImage){
+//   output = output +``;  
+//    someHTML += `
+//    <img src='${image.fileName}' alt='my image'>
+//    <a href="${image.attribution.url}">Some Text</a>`;
+//  });
  
-  document.querySelector('.table').innerHTML = output;
-  //newArray.forEach(function(image){
-    //   // someHTML = someHTML +``;  
-    //   someHTML += `
-    //   <img src='${image.fileName}' alt='my image'>
-    //   <a href="${image.attribution.url}">Some Text</a>`;
-    // });
+  //document.querySelector('.table').innerHTML = output;
+  newArray.forEach(function(image){
+      someHTML = someHTML +``;  
+      someHTML += `
+      <img src='${image.fileName}' alt='my image'>
+      <a href="${image.attribution.url}">Some Text</a>`;
+    });
+    
+    document.querySelector('.table').innerHTML = output;
