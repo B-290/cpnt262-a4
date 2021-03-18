@@ -1,5 +1,4 @@
 `use strict`
-v
 let myRequest = new Request('http://localhost:3000/newArray')
 
 fetch (myRequest)
