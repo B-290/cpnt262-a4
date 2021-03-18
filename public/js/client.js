@@ -1,13 +1,18 @@
-fetch ('http://localhost:3000/cpnt262-a4/routes/api/v0')
-      
-      .then (function(response){
-        throw new console.error('not-found');
+`use strict`
+v
+let myRequest = new Request('http://localhost:3000/newArray')
 
-      return response.json();  
+fetch (myRequest)
+
+
+      .then (function(response){
+          return response.json();
+
+       
       })
       
       .then(function(data){
-        console.log(data);
+        console.log(data.newArray);
       })
 
       .then(function(jsonData){
