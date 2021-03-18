@@ -14,6 +14,8 @@ fetch ('http://localhost:3000/api/data/gallery')
         console.log(err);
       });
 
+      app.set('view engine','ejs')
+
 const newArray = require('../v0/gallery.js');
   
 let output = '';
