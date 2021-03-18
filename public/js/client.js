@@ -1,6 +1,4 @@
-const newArray = require("../../data/gallery");
-
-fetch ('http://localhost:3000/routes/api/v0')
+fetch ('http://localhost:3000/cpnt262-a4/routes/api/v0')
       
       .then (function(response){
         throw new console.error('not-found');
