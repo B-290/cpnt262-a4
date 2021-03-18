@@ -1,4 +1,6 @@
-fetch ('https://git.heroku.com/b-350.git')
+const newArray = require("../../data/gallery");
+
+fetch ('http://localhost:3000/routes/api/v0')
       
       .then (function(response){
         throw new console.error('not-found');
@@ -8,6 +10,10 @@ fetch ('https://git.heroku.com/b-350.git')
       
       .then(function(data){
         console.log(data);
+      })
+
+      .then(function(jsonData){
+        console.log(newArray)
       })
 
       .catch (function(err){

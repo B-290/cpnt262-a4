@@ -1,10 +1,11 @@
 
 const express = require('express');
+const newArray = require('../../data/gallery');
 const router = express.Router();
 const gallery = ('../../data/gallery.js')
 
 router.get('/gallery', function(request, response){
- response.json(gallery);
+ response.json(newArray);
 });
 
 module.exports = router
