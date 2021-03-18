@@ -1,7 +1,7 @@
 'use strict'
 
 
-const newImage = [
+const newArray = [
   {    
     id:           237,
     title:        'Puppy',
