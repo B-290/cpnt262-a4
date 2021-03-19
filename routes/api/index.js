@@ -8,15 +8,11 @@ router.use((req, res, next) => {
 })
 
 router.get('/', (req, res) => {
-  res.render('pages/index', {pageTitle: "Program Schedule"})
+  res.render('/views/partials', {pageTitle: "image gallery"})
 })
 
-router.get('/library', (req, res) => {
-  res.render('pages/library', {pageTitle: "WBDV Library"})
-})
-
-router.get('/exercises', (req, res) => {
-  res.render('pages/exercises', {pageTitle: "WBDV Exercises"})
+router.get('/ejs', (req, res) => {
+  res.render('pages', {pageTitle: "ejs"})
 })
 
 module.exports = router;

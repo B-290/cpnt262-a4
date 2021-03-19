@@ -1,5 +1,5 @@
 `use strict`
-let myRequest = new Request('http://localhost:3000/newArray')
+let myRequest = new Request('.../../gallery')
 
 fetch (myRequest)
 
