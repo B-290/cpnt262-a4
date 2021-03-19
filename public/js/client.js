@@ -1,5 +1,7 @@
+const newArray = require("../../data/gallery");
+
 `use strict`
-let myRequest = new Request('.../../gallery')
+let myRequest = new Request('')
 
 fetch (myRequest)
 
@@ -22,6 +24,7 @@ fetch (myRequest)
         console.log(err);
       });
 
+      var newArray = JSON.stringify(newArray);
 
       let someHTML = '';
       for (let i = 0; i < newArray.length; i++) {
