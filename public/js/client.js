@@ -1,6 +1,8 @@
-const newArray = require("../../data/gallery");
 
 `use strict`
+
+const newArray = require("../../data/gallery");
+
 let myRequest = new Request('')
 
 fetch (myRequest)
@@ -24,9 +26,10 @@ fetch (myRequest)
         console.log(err);
       });
 
-      var newArray = JSON.stringify(newArray);
 
-      let someHTML = '';
+
+      let someHTML = "";
+      
       for (let i = 0; i < newArray.length; i++) {
         someHTML += `
         <img src='${newArray[i].fileName}' alt='my image'>
