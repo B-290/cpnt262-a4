@@ -1,7 +1,9 @@
 
 `use strict`
 
-      fetch('http://localhost/cpnt262-a4/server/newArray.json')
+import newArray from '../../routes';
+
+      fetch('https://b-350.herokuapp.com')
      
      .then(response => response.json())
      
