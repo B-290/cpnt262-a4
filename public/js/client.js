@@ -2,7 +2,7 @@
 
 
 
-      fetch('http://localhost:3000/routes/api')
+      fetch('./newArray')
      
      .then(response => response.json())
      
