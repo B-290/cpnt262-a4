@@ -1,13 +1,10 @@
 
 `use strict`
 
-fetch (myRequest)
-
-
-      .then (function(response){
-          return response.json();
-
-       
+      fetch('http://localhost/cpnt262-a4/server/newArray.json')
+     
+     .then(response => response.json())
+     .then(data => console.log(data)); 
       })
       
       .then(function(data){
