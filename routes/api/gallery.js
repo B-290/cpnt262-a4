@@ -7,7 +7,7 @@ const router = express.Router()
 router.get('/', (request, response) => {
   console.log(request)
 
-  response.render('', {fileName: ''});
+  response.render('', {newArray: ''});
 })
 
 router.get('/:newArray-fileName', (request, response) => {

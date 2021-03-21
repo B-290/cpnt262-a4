@@ -1,30 +1,29 @@
+const newArray = require("../../data/gallery");
+
 `use strict`
 
 
 
-      fetch('https://unsplash.com/photos/8wTPqxlnKM4')
+      fetch('http://localhost:3000/routes/api/gallery')
      
-     .then(response => response.json())
-     
-     .then(data => console.log(data)) 
-    
-      
-      .then(function(data){
-        console.log(data.newArray);
+      .then(function(response) {
+        return response.json();
       })
 
-     
-      .then(function(newArray){
-        
-        newArray.forEach(function(image){
-        someHTML = someHTML +``;  
-        someHTML += `
-        <img src='${image.fileName}' alt='my image'>
-        <a href="${image.attribution.url}">Some Text</a>`;
+      console.log(newArray)
+      
+    
+      newArray.forEach(function(item){
+        imgTemplate += 
+          `<figure>
+          <a href="${item.id}">
+            <img src="https://picsum.photos/id/${item.id}/250" alt="${item.title}">
+          </a>
+          <figcaption>Hello ${item.title}!</figcaption>
+          </figure>`;
       });
-        document.querySelector('#table').innerHTML = someHTML;
-       
-      });
+
+      
 
      
 
