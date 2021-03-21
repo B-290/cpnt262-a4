@@ -1,3 +1,5 @@
+const newArray = require("../../data/gallery");
+
 `use strict`
 
 
@@ -17,12 +19,12 @@
         
    })
   
-  data.forEach(function(image){
+  newArray.forEach(function(image){
       
          console.log(image);
   })      
        
-        data.forEach(function(image){
+        newArray.forEach(function(image){
         
         someHTML = someHTML +``;  
         someHTML += `
