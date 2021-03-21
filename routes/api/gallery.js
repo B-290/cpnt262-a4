@@ -1,5 +1,6 @@
 
 const express = require('express');
+const { request } = require('http');
 const newArray = require('../../data/gallery');
 
 const router = express.Router()
@@ -22,6 +23,6 @@ router.get('/:newArray-fileName', (request, response) => {
   });
 })
 
-console.log(require)
+console.log(request)
 
 module.exports = router
