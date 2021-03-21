@@ -1,15 +1,13 @@
 
 const express = require('express');
 const newArray = require('../../data/gallery');
-const definitions = require('../data/definitions')
-
 
 const router = express.Router()
 
 router.get('/', (request, response) => {
   console.log(request)
 
-  response.render('', {alt: ''});
+  response.render('', {fileName: ''});
 })
 
 router.get('/:newArray-fileName', (request, response) => {
@@ -23,5 +21,7 @@ router.get('/:newArray-fileName', (request, response) => {
   title: '',
   });
 })
+
+console.log(require)
 
 module.exports = router

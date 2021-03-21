@@ -14,7 +14,7 @@ app.use(function(request, response) {
 app.get('/',(req, res) => {
  res.send(newArray);
 })
-
+  
 console.log(require);
 
 const PORT = process.env.PORT || 3000;

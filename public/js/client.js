@@ -1,7 +1,8 @@
-
 `use strict`
 
-      fetch('https://b-350.herokuapp.com')
+
+
+      fetch('http://localhost:3000/server')
      
      .then(response => response.json())
      
