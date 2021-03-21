@@ -2,7 +2,7 @@
 
 
 
-      fetch('./newArray.json')
+      fetch('http://localhost:3000/gallery/newArray')
      
      .then(response => response.json())
      
@@ -13,12 +13,9 @@
         console.log(data.newArray);
       })
 
-      .then(function(jsonData){
-        console.log(newArray)
-      })
-
      
       .then(function(newArray){
+        
         newArray.forEach(function(image){
         someHTML = someHTML +``;  
         someHTML += `

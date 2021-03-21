@@ -4,6 +4,7 @@ const express = require('express');
 const app = express();
 const newArray = require('./data/gallery.js');
 const { response } = require('express');
+const router = express.Router()
 
 app.use(express.static(path.join(__dirname,'./public')));
 
@@ -13,9 +14,10 @@ app.use(function(request, response) {
 })
 
 app.get('/',(req, res) => {
- res.send(newArray);
+ res.json({newArray});
 })
-  
+
+console.log(newArray)   
 console.log(require);
 console.log(response);
 

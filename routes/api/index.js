@@ -1,5 +1,6 @@
 const path = require('path');
 const express =  require('express');
+const app = express();
 const port = 3000;
 
 app.get('views', path.join(__dirname, 'views'));
@@ -14,11 +15,8 @@ res.render('pages/elements')
 app.listen(port, () => console.log(`MasterEJS app 
 Started on port ${port}!`));
 
-const express = require('express');
 
-const router = express.Router()
-
-router.get('/', (request, response) => {
+router.get('./index', (request, response) => {
   response.render('index', {alt: 'class="alt"'});
 })
 
