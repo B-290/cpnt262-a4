@@ -11,16 +11,14 @@ const newArray = require("../../data/gallery");
       })
 
       console.log(newArray)
-      
-    
+
+     
       newArray.forEach(function(item){
         imgTemplate += 
-          `<figure>
+          `<tr>
           <a href="${item.id}">
-            <img src="https://picsum.photos/id/${item.id}/250" alt="${item.title}">
+            <img src="https://picsum.photos/id/${item.fileName}/250" alt="${item.title}">
           </a>
-          <figcaption>Hello ${item.title}!</figcaption>
-          </figure>`;
       });
 
       
