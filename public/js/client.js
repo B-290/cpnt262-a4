@@ -2,7 +2,7 @@
 
 
 
-      fetch('http://localhost:3000')
+      fetch('http://localhost:3000/newArray.json')
      
      .then(response => response.json())
      
