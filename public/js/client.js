@@ -2,7 +2,7 @@
 
 
 
-      fetch('http://localhost:3000/newArray.json')
+      fetch('https://unsplash.com/photos/8wTPqxlnKM4')
      
      .then(response => response.json())
      
