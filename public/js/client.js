@@ -12,14 +12,14 @@ const newArray = require("../../data/gallery");
 
       console.log(newArray)
 
-     
-      newArray.forEach(function(item){
-        imgTemplate += 
-          `<tr>
-          <a href="${item.id}">
-            <img src="https://picsum.photos/id/${item.fileName}/250" alt="${item.title}">
-          </a>
-      });
+       
+        newArray.forEach(function(image){
+            someHTML = someHTML +``;  
+            someHTML += `
+            <img src='${image.fileName}' alt='my image'>
+            <a href="${image.attribution.url}">Some Text</a>`;
+          });
+            document.querySelector('#table').innerHTML = someHTML;
 
       
 
