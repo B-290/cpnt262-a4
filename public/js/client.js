@@ -2,7 +2,7 @@
 
 
 
-      fetch('./newArray')
+      fetch('./newArray.json')
      
      .then(response => response.json())
      
