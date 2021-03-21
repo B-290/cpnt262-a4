@@ -1,8 +1,8 @@
 
 const express = require('express');
-const newArray = require('../../data/gallery');
+const newArray = require('/gallery');
 const router = express.Router();
-const gallery = ('../../data/gallery.js')
+const gallery = ('/gallery.js')
 
 router.get('/gallery', function(request, response){
  response.json(newArray);
