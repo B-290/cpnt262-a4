@@ -18,7 +18,7 @@ app.get('/',(req, res) => {
  res.json({newArray});
 })
 
-//stringify function to convert the array to json string
+//stringify method to convert the array to json string
 jsonArrData = JSON.stringify(newArray)
 
 console.log(jsonArrData)
