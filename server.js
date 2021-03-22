@@ -30,6 +30,11 @@ console.log(typeof jsonArrData === 'string')
 console.log(require);
 console.log(response);
 
+app.use(function(req,res){
+  res.status(404).end();
+  response.send('custom-404')
+})
+
 //send to localhost:3000 because every app does a GET request at a beginning of every session 
 
 const PORT = process.env.PORT || 3000;
