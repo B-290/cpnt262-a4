@@ -6,18 +6,19 @@ const newArray = require('./data/gallery');
 const { response } = require('express');
 const router = express.Router()
 
-
+//declare variables
 app.use(express.static(path.join(__dirname,'./public')));
-
+//use middle-ware to join with ./public
 app.use(function(request, response) {
   response.send(newArray);
-  
+  //send the array to respond with json lateron
 })
 
 app.get('/',(req, res) => {
  res.json({newArray});
 })
 
+//stringify function to convert the array to json string
 jsonArrData = JSON.stringify(newArray)
 
 console.log(jsonArrData)
@@ -29,7 +30,7 @@ console.log(typeof jsonArrData === 'string')
 console.log(require);
 console.log(response);
 
-
+//send to localhost:3000 because every app does a GET request at a beginning of every session 
 
 const PORT = process.env.PORT || 3000;
 
