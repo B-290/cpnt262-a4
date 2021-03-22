@@ -16,7 +16,7 @@
    })
   //for each loop to go through all the elements in the json string
        
-        newArray.forEach(function(image){
+        data.forEach(function(image){
         
         someHTML = someHTML +``;  
         someHTML += `
