@@ -19,6 +19,7 @@ This gallery has nine images which can be common examples of pictures from the j
 ## credit 
  [W3S](https://www.w3schools.com/html/)
  [HTML5 UP](https://html5up.net/)
+ Vittaly helped me out with the public/js/client.js.
 
 
 
